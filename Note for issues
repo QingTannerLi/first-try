@@ -1,0 +1,7 @@
+# This is a note of mine which records some issues I met and solved or pending.
+
+1. Chrome Driver
+  option = webdriver.ChromeOptions()
+  option.add_argument("--disable-extensions")
+  option.set_experimental_option("useAutomationExtension", False)
+https://stackoverflow.com/questions/13227346/set-chrome-options-with-remote-driver
