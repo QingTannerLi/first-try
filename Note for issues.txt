@@ -4,4 +4,9 @@
   option = webdriver.ChromeOptions()
   option.add_argument("--disable-extensions")
   option.set_experimental_option("useAutomationExtension", False)
+  
+  browser = webdriver.Remote(webdriver.DesiredCapabilities.CHROME)
+  CHROME = {
+  "chromeOptions":{"args":['--disable-infobars'],"useAutomationExtension":False}
+  }
 https://stackoverflow.com/questions/13227346/set-chrome-options-with-remote-driver
